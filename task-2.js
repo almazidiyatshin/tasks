@@ -5,15 +5,9 @@ const str2 = 'А роза упала на лапу Азора';
 const str3 = 'Человек';
 
 const isPalindrom = (str) => {
-  if (str.length < 2) {
-    return true;
-  }
-
-  const normalStr = str.toLowerCase().trim();
-  const firstSym = normalStr[0];
-  const lastSym = normalStr[normalStr.length - 1];
-
-  return firstSym !== lastSym ? false : isPalindrom(normalStr.substring(1, normalStr.length - 1));
+  const normalStr = str.toLowerCase().split(' ').join('');
+  const reverseStr = normalStr.split('').reverse().join('');
+  return normalStr === reverseStr;
 };
 
 console.log(isPalindrom(str1));

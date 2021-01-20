@@ -1,4 +1,6 @@
 # Tasks
+Solving various tasks in JavaScript.
+
 ### Task-1
 Write a function that will return the sum of the array elements.
 
